@@ -36,7 +36,7 @@ export default function Frienddetails() {
        
         <div className='imageConatiner'>
         <img src={Star} alt='' className='fstart' width={50}/>
-        <img src={Box} alt='' className='giftBox'/>
+        <img src={Box} alt=''  loading='lazy' className='giftBox'/>
         <img src={Ballon} alt=''  className='ballon' width={50}/>
         </div>
         <div className='formMainWrap collumnCenter'>

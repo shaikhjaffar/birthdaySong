@@ -42,7 +42,7 @@ export default function SplashScreen() {
   return (
     <div className='splashwrap'>
      <img id='cad' className='cadbaory' src={cad} alt='cad'/>
-     <img id='cad' className='heading' src={unit} alt='unit'/>
+     <img id='cad' className='heading'  src={unit} alt='unit'/>
     </div>
   )
 }

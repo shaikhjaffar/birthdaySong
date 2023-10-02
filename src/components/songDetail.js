@@ -34,9 +34,9 @@ export default function SongDetail() {
   return (
     <div>
         <div className='imageConatiner'>
-        <img src={Star} alt='' className='fstart' width={50}/>
-        <img src={Box} alt='' className='giftBox'/>
-        <img src={Ballon} alt=''  className='ballon' width={50}/>
+        <img src={Star} alt=''  loading='lazy' className='fstart' width={50}/>
+        <img src={Box} alt=''  loading='lazy' className='giftBox'/>
+        <img src={Ballon} alt=''   loading='lazy' className='ballon' width={50}/>
         </div>
         <div className='optionmainwrap'>
             <div className='songcard'>
@@ -59,21 +59,21 @@ export default function SongDetail() {
                 <label className='songimgwrap'>
                    <input type='radio' value="funny" name="mood"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>Funny</p>
                    </div>
                 </label>
                 <label className='songimgwrap'>
                    <input type='radio' value="Motivational" name="mood"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>Motivational</p>
                    </div>
                 </label>
                 <label className='songimgwrap'>
                    <input type='radio' value="Calm" name="mood"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img   loading='lazy' src={Emojis} alt=''/>
                     <p>Calm</p>
                    </div>
                 </label>
@@ -85,35 +85,35 @@ export default function SongDetail() {
                 <label className='songimgwrap'>
                    <input type='radio' value="edm" name="Genre"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>EDM</p>
                    </div>
                 </label>
                 <label className='songimgwrap'>
                    <input type='radio' value="desi" name="Genre"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>Desi</p>
                    </div>
                 </label>
                 <label className='songimgwrap'>
                    <input type='radio' value="pop" name="Genre"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>Pop</p>
                    </div>
                 </label>
                 <label className='songimgwrap'>
                    <input type='radio' value="Rap" name="Genre"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>Rap</p>
                    </div>
                 </label>
                 <label className='songimgwrap'>
                    <input type='radio' value="rock" name="Genre"/>
                    <div className='radio-btns'>
-                    <img src={Emojis} alt=''/>
+                    <img  loading='lazy' src={Emojis} alt=''/>
                     <p>Rock</p>
                    </div>
                 </label>

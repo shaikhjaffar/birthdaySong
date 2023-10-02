@@ -47,7 +47,7 @@ export default function Form() {
       }, []);
   return (
     <div className='fromwrap'>
-    <img src={Box} className='landingBox' alt='box' />
+    <img src={Box} className='landingBox' loading='lazy' alt='box' />
     <div className='formMainWrap collumnCenter'>
       <h3>Register to create</h3>
       <img  className='star' width={80} src={Star}/>
