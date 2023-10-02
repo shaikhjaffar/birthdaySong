@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
-import React, { lazy, Suspense } from 'react';
-import { useSelector } from 'react-redux';
-import {ThreeCircles} from 'react-loader-spinner'
-const SplashScreen = lazy (()=> import("./components/SplashScreen"))
-const Form = lazy (()=> import("./components/form"))
-const Frienddetails = lazy (()=> import("./components/frienddetails"))
-const Header = lazy (()=> import("./components/header"))
-const Musicmore = lazy (()=> import("./components/musicmore"))
-const Hamburger = lazy (()=> import( "./components/nav"))
-const SongDetail = lazy (()=> import("./components/songDetail"))
-const Lyricsshow = lazy (()=> import("./components/lyricsshow"))
 
+import SplashScreen from "./components/SplashScreen";
+import Form from "./components/form";
+import Frienddetails from "./components/frienddetails";
+import Header from "./components/header";
+import Musicmore from "./components/musicmore";
+import Hamburger from "./components/nav";
+import SongDetail from "./components/songDetail";
+import Lyricsshow from "./components/lyricsshow";
+import { useSelector } from 'react-redux';
 
 
 function App() {
@@ -48,21 +46,8 @@ function App() {
   return (
     <div className="DeviceWrap">
       <div className="blurBody" id="blr">
-      
+
       </div>
-      <Suspense fallback=
-{<ThreeCircles
-  height="100"
-  width="100"
-  color="#e7b363"
-  wrapperStyle={{}}
-  wrapperClass="loader"
-  visible={true}
-  ariaLabel="three-circles-rotating"
-  outerCircleColor=""
-  innerCircleColor=""
-  middleCircleColor=""
-/>}>
        {
         loader  ?  <SplashScreen/> : <>
            <Hamburger/>
@@ -99,7 +84,7 @@ function App() {
     ()}
         </>
        }
-       </Suspense>
+      
     
     </div>
   );

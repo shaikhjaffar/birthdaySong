@@ -48,8 +48,13 @@ export default function Frienddetails() {
             <span>{age}</span>
             <span> Years</span>
             <div className='arrowWarp'>
-             <span className='arrow arrowup' onClick={()=> setage(age + 1)}></span>
-             <span className='arrow arrowdown' onClick={()=> age > 0 ?  setage(age -1) : setage(0)}></span>
+                <span style={{width:"40px"}} onClick={()=> setage(age + 1)}>
+                <span className='arrow arrowup' ></span>
+                </span>
+              <span style={{width:"40px"}} onClick={()=> age > 0 ?  setage(age -1) : setage(0)}>
+              <span className='arrow arrowdown'></span>
+
+              </span>
             </div>
 
          </div>
